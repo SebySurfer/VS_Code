@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+    The meta is for the search engine to help identify our type of content. 
+    In other words, they are the 'keywords' to finding our page 
+
+    -->
+    <meta name = "description", content="una pag guebona de anaua">  
+    <meta name = "keyword", content="blog chidisisima de la anaua">
+    <title>Mi pagina</title>
+</head>
+<body>
+    <h1>Titulo 1</h1>
+    <h2>Titulo 2</h2>
+    <h3>Titulo 3</h3>
+    <h4>Titulo 4</h4>
+    <h5>Titulo 5</h5>
+    <h6>Titulo 6</h6>
+
+    <!--
+        Ordered List
+    -->
+
+    <ol>
+        <h1>text</h1>
+        <h1>text</h1>
+        <h1>text</h1>
+
+
+    </ol>
+
+    <!--
+        Unordered List
+    -->
+    <ul>
+        <h1>text2</h1>
+        <h1>text2</h1>
+        <h1>text2</h1>
+        <h1>text2</h1>
+
+    </ul>
+
+    <!--
+        Paragraphs
+    -->
+    <p>
+        he HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+    </p>
+
+    <p>
+
+        Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for its appearance.
+
+
+    </p>
+
+    <!--
+        Tables
+    -->
+
+    <table>
+
+    <thead> 
+        <tr> 
+            <td> Name </td>
+            <td> Age </td>
+            <td> Legal Charges </td>
+
+        </tr>
+
+    </thead>
+
+    <tbody> 
+        <tr>
+            <td>Seb</td>
+            <td>20</td>
+            <td>Homicide</td>
+
+
+        </tr>
+
+        <tr>
+            <td>Roco</td>
+            <td>12</td>
+            <td>Incrimination</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Pablo Escobar</td>
+            <td>45</td>
+            <td colspan="2">Being too funny</td>
+
+
+        </tr>
+
+    </tbody>
+    </table>
+    
+    <form name="login" method="get">
+        <label for = "name">Name: </label>
+        <input id="name" name = "name" type = "text" placeholder="Write your dam name", class="", value="Default">
+        <br><br>
+        <label for= "edad">Age: </label>
+        <input type = "number" name = "age" step="2" min = "18">
+        <br><br>
+        <label for="password">Password: </label>
+        <input type="password" name = "password">
+        <br><br>
+        <label for = "Calendar">Calendar:</label>
+        <input type= "date"name ="calendar"> 
+        <br><br>
+        <label for="Notes">Notes: </label>
+        <input type="text" maxlength="20" cols="80" rows="5">
+        <br><br>
+        <label for="State">State:</label>
+        <select name="State" id = "State">
+            <option value = "" >Select: </option>
+            <option value = "BCS"> Baja California Sur </option>
+            <option value="DF">Distrito Federal</option>
+            <option value="SN">Sonora</option>
+            <option value="SIN">Sinaloa</option>
+            <option value="OAX">Oaxaca</option>
+        </select>
+        <br><br>
+        <label for="Cine">Cine:</label>
+        <input type="checkbox" unchecked>
+        <label for="Deportes">Deportes:</label>
+        <input type="checkbox" unchecked>
+        <label for="Futbol">Futbol:</label>
+        <input type="radio" unchecked>
+        <br><br>
+        <input type="submit" name="enviar" value="Send this dam thing" >
+
+
+
+
+
+
+        <!--
+        Note: 
+        By default, eevrything is inline, so we added <br> to put down lines
+
+        Name = es el nombre del input, para los envios del formulario 
+
+        id = sirve para servir para los estilos de css
+
+        Por buenos practicos, usamos el mismo nombre para ambos
+
+        Methods of Forms: 
+        We use GET to send one parameter 
+        We use POST to send various parameters
+    -->
+
+
+    </form>
+
+    <br><br><br>
+
+    
+</body>
+</html>

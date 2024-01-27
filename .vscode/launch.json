@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/Sebastian 1/Desktop/IT/VS Code/C++/Aleatorio con arrays.dSYM/Contents/Resources",
+      "program": "/Users/Sebastian 1/Desktop/IT/VS Code/C++/Aleatorio con arrays.dSYM/Contents/Resources/build/Debug/outDebug"
+    }
+  ]
+}

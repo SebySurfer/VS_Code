@@ -1,7 +1,12 @@
 const mongoose = require('mongoose')
 
 const tareaSchema = mongoose.Schema({
-    descripcion:{
+
+    user:{
+    type: mongoose.Schema.Types.ObjectId, 
+    required: true, 
+    ref: 'User'
+}, descripcion: {
         type: String, 
         required: [true, "Por favor tecla una descripcion"]
     }

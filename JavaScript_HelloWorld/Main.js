@@ -576,10 +576,149 @@ forEach();
 
 */
 
+//*******************************************************************************************
+// --> Objects = They are mutable even with const !!!
+
+/*
+We use curly braces, {}, to designate an object literal
+
+We fill an object with unordered data. This data is organized 
+into key-value pairs. A key is like a variable name that points to a location 
+in memory that holds a value.
+
+A key’s value can be of any data type in the language including functions or other objects.
+
+
+Syntax:
+
+let object_name = {
+  '<key1>' : 'value1', 
+  '<key2>' : 'value2'
+
+}
+
+*/
+
+
+let spaceShip = {
+  fuel: '100%', 
+  tempCelc: 200, 
+  'Planet Target': 'Pandora', 
+}
+
+// Accessiing Properties
+//----------------------
+
+
+/*
+Dot Notation:
+We are accostumed to using the dot notation in gaining acess to properies of JavaScript.
+
+For ex, <String>.length
+*/
+
+console.log(spaceShip.fuel);
+
+/*
+Bracket Notation:
+
+We must use bracket notation when accessing keys that have numbers, spaces, or 
+special characters in them. Without bracket notation in these situations, our 
+code would throw an error.
+
+*/
+
+console.log(spaceShip['Planet Target']);
+
+//Changing values 
+spaceShip.fuel = '80%';
+
+//Adding values
+/*
+Even though we may create a value the same way we change one, it will be added to the object
+*/
+
+spaceShip.distance = 1500000;
+
+console.log(spaceShip);
+
+//Using Methods
+//-------------
+
+/* 
+Do object methods seem familiar? That’s because 
+you’ve been using them all along! For example console 
+is a global JavaScript object and .log() is a method on 
+that object. Math is also a global JavaScript object and 
+.floor() is a method on it.
+*/
+
+let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, which we do not care for.';
+
+let alienShip = {
+  retreat(){
+    console.log(retreatMessage);
+  },
+
+  takeOff(){
+    console.log('Spim... Borp... Glix... Blastoff!');
+
+  }
+
+}
+
+
+alienShip.retreat();
+alienShip.takeOff();
 
 
 
+// Nested Objects
+//---------------
 
+/*
+Its just basically objects, within objects, within other objects. 
+
+Example is in the file name "Nested_Objects.js"
+*/
+
+//Passing References
+//-----------------
+
+/*
+When we make changes to an object passed into a function, those changes are permanent.
+ */
+
+
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth'
+};
+
+// Write your code below
+
+let greenEnergy = obj => {
+  obj['Fuel Type'] = 'avocado oil';
+  //note: if it didnt reference with an object argument, it wouldn't of changed. 
+  //Ex: '['Fuel Type'] = 'avocado oil';' (without the obj)
+
+}
+
+let remotelyDisable = obj =>{
+  obj.disabled = true;
+}
+
+greenEnergy(spaceship);
+
+remotelyDisable(spaceship);
+
+console.log(spaceship)
+
+
+// The 'this' keyword
+/**
+ * The this keyword references the calling object which provides access to the calling object’s properties. 
+ */
 
 
 
